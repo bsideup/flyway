@@ -10,4 +10,4 @@ before_install:
   - echo "mariadb.url=jdbc:mariadb://localhost/flyway_maria_db" > ~/flyway-mediumtests.properties
 
 env:
-  - MAVEN_OPTS=-P-CommercialDBTest,-CommandlinePlatformAssemblies
+  - MAVEN_CMD_LINE_ARGS=-P-CommercialDBTest,-CommandlinePlatformAssemblies
