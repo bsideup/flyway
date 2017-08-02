@@ -9,6 +9,7 @@ before_install:
   - mysql --verbose -uroot < ./flyway-core/src/test/resources/migration/dbsupport/mysql/createDatabase.sql
   - echo "mariadb.url=jdbc:mariadb://localhost/flyway_maria_db" > ~/flyway-mediumtests.properties
 
-install: ./mvnw install -DskipTests -P-CommercialDBTest,-CommandlinePlatformAssemblies
-
-script: ./mvnw test -P-CommercialDBTest,-CommandlinePlatformAssemblies
+before_install:
+  - env
+  - docker info
+install: ./mvnw install -P-CommercialDBTest,-CommandlinePlatformAssemblie
