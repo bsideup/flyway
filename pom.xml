@@ -714,7 +714,6 @@
                         <exclude>**/*MediumTest.java</exclude>
                     </excludes>
                     <parallel>methods</parallel>
-                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
                     <threadCount>2</threadCount>
                     <!--perCoreThreadCount>true</perCoreThreadCount-->
                 </configuration>
@@ -736,7 +735,6 @@
                             <includes>
                                 <include>**/*MediumTest.java</include>
                             </includes>
-                            <redirectTestOutputToFile>true</redirectTestOutputToFile>
                             <systemPropertyVariables>
                                 <user.timezone>+00:00</user.timezone>
                             </systemPropertyVariables>
