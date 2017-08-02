@@ -424,13 +424,15 @@
                 <groupId>com.google.android</groupId>
                 <artifactId>android</artifactId>
                 <version>${version.android}</version>
-                <optional>provided</optional>
+                <optional>true</optional>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>com.google.android</groupId>
                 <artifactId>android-test</artifactId>
                 <version>${version.android}</version>
-                <optional>provided</optional>
+                <optional>true</optional>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven</groupId>
